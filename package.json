@@ -1,12 +1,12 @@
 {
-  "name": "render-wss",
+  "name": "railway-wss",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
-    "puppeteer-extra": "^3.3.6",
+    "puppeteer-core": "^22.0.0",
     "ws": "^8.16.0"
   }
 }
