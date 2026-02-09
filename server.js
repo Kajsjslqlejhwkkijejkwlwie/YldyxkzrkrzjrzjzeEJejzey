@@ -1,6 +1,6 @@
 const http = require("http");
 const WebSocket = require("ws");
-const puppeteer = require("puppeteer-core");
+const puppeteer = require("puppeteer");
 
 const PORT = process.env.PORT || 8080;
 
@@ -29,8 +29,7 @@ function forward(d) {
 
 (async () => {
     const browser = await puppeteer.launch({
-        headless: "new",
-        executablePath: "/usr/bin/chromium",
+        headless: true,
         args: [
             "--no-sandbox",
             "--disable-setuid-sandbox",
